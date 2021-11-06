@@ -1,26 +1,25 @@
 {
-    "name": "root",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-      "prepare-next-release": "standard-version --prerelease pre --release-as minor --skip.changelog=true --skip.commit=true",
-      "prepare-release": "tools/prepare-release.sh",
-      "release": "standard-version"
-    },
-    "devDependencies": {
-      "standard-version": "^9.3.2"
-    },
-    "standard-version": {
-      "bumpFiles": [
-        {
-          "filename": "package.json",
-          "type": "json"
-        },
-        {
-          "filename": "packages/test/package.json",
-          "type": "json"
-        }
-      ]
-    }
+  "name": "root",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "prepare-next-release": "standard-version --prerelease pre --release-as minor --skip.changelog=true --skip.commit=true",
+    "prepare-release": "tools/prepare-release.sh",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  },
+  "standard-version": {
+    "bumpFiles": [
+      {
+        "filename": "package.json",
+        "type": "json"
+      },
+      {
+        "filename": "packages/test/package.json",
+        "type": "json"
+      }
+    ]
   }
-  
+}
